@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "aeextensionkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AuroraEditor/AEExtensionKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "53577d52ad6db38b3543ff2a17acc533a0673b8c"
+      }
+    }
+  ],
+  "version" : 2
+}
