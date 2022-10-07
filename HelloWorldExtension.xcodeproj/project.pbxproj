@@ -78,6 +78,7 @@
 				0463E4FC27F7492100806D5C /* Frameworks */,
 				0463E4FD27F7492100806D5C /* Resources */,
 				04C325562801B3E900C8DA2D /* Embed Frameworks */,
+				2B5C5D5428F05D4000C9334D /* Install to AuroraEditor */,
 			);
 			buildRules = (
 			);
@@ -136,6 +137,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B5C5D5428F05D4000C9334D /* Install to AuroraEditor */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Install to AuroraEditor";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f -R ${BUILT_PRODUCTS_DIR}/*.AEext ~/Library/Application\\ Support/com.auroraeditor/Extensions/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0463E4FB27F7492100806D5C /* Sources */ = {
