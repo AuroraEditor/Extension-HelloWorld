@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0463E50B27F749CD00806D5C /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463E50A27F749CD00806D5C /* HelloWorld.swift */; };
 		2B20A83D28EF4C5B00D14316 /* AEExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2B20A83C28EF4C5B00D14316 /* AEExtensionKit */; };
+		2B520BAE28FEB0FD000F7489 /* AEExtensionKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2B20A83C28EF4C5B00D14316 /* AEExtensionKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +19,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2B520BAE28FEB0FD000F7489 /* AEExtensionKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
