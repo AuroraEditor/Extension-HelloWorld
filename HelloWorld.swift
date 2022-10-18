@@ -15,6 +15,21 @@ public class HelloWorldExtension: ExtensionInterface {
         self.api = api
         print("Hello from HelloWorldExtension: \(api)!")
     }
+
+    public func register() -> ExtensionManifest {
+        return .init(
+            name: "HelloWorldExtension",
+            displayName: "HelloWorldExtension",
+            version: "1.0",
+            minAEVersion: "1.0"
+        )
+    }
+
+    public func respond(action: String, parameters: [String: Any]) -> Bool {
+        print("respond(action: String, parameters: [String: Any])", action, parameters)
+
+        return true
+    }
 }
 
 @objc(HelloWorldBuilder)
