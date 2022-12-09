@@ -10,6 +10,7 @@ import AEExtensionKit
 
 public class HelloWorldExtension: ExtensionInterface {
     var api: ExtensionAPI
+    var AuroraAPI: AuroraAPI?
 
     init(api: ExtensionAPI) {
         self.api = api
@@ -27,6 +28,12 @@ public class HelloWorldExtension: ExtensionInterface {
 
     public func respond(action: String, parameters: [String: Any]) -> Bool {
         print("respond(action: String, parameters: [String: Any])", action, parameters)
+
+        if action == "registerCallback" {
+            if let api = parameters["callback"] as? AuroraAPI {
+                AuroraAPI = api
+            }
+        }
 
         return true
     }
