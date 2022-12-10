@@ -10,7 +10,7 @@ import AEExtensionKit
 
 public class HelloWorldExtension: ExtensionInterface {
     var api: ExtensionAPI
-    var AuroraAPI: AuroraAPI?
+    var AuroraAPI: AuroraAPI = { _, _ in }
 
     init(api: ExtensionAPI) {
         self.api = api
